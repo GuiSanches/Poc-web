@@ -16,7 +16,7 @@ const inicializa = _ => {
     }
     iniciado = false
     for (let i = 1; i <= 3; i++)
-        document.getElementById('v' + i).src = "../imagens/coracao_cheio.png"   
+        document.getElementById('v' + i).src = "/imagens/coracao_cheio.png"   
     
 }
 inicializa()
@@ -32,7 +32,7 @@ const posicaoRandomica = () => {
             clearInterval(cronometro)
             inicializa()
         } else {
-            document.getElementById('v' + vidas).src = "../imagens/coracao_vazio.png"
+            document.getElementById('v' + vidas).src = "./imagens/coracao_vazio.png"
             vidas++ //incrementa vida atual
         }
     }
