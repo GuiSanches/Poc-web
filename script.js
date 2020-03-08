@@ -16,7 +16,7 @@ const inicializa = _ => {
     }
     iniciado = false
     for (let i = 1; i <= 3; i++)
-        document.getElementById('v' + i).src = "/imagens/coracao_cheio.png"   
+        document.getElementById('v' + i).src = "./imagens/coracao_cheio.png"   
     
 }
 inicializa()
@@ -46,7 +46,7 @@ const posicaoRandomica = () => {
 
     //criar o elemento html
     let mosquito = document.createElement('img')
-    mosquito.src = '../imagens/mosquito.png'
+    mosquito.src = './imagens/mosquito.png'
     mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
@@ -91,8 +91,6 @@ const ladoAleatorio = () => {
 const iniciarJogo = _ => {
     let nivel = document.getElementById('nivel').value
     if (nivel == '') alert('Selecione um nivel para começar')
-    const clearUrl = window.location.href.split('?')[0]
-    window.location.href = `${clearUrl}?nivel=${nivel}`
 
     let criaMosquitoTempo = 1500 //Duração cada mosquito na tela
     inicializa()
