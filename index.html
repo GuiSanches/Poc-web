@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="UTF-8" />
+    <title>Gui's blog</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+  </header>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#">Gui Sanches</a>
+        </div>
+        <div class="nav-right">
+          <div class="navbar-menu">
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#historia">História</a>
+            <a class="nav-item" href="#galeria">Jogo</a>
+          </div>
+          <div class="contato">
+            <a class="nav-item" href="https://github.com/GuiSanches">GitHub</a>
+            <a class="nav-item" href="https://www.facebook.com/guilherme.queiroz.520">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="capa">
+      <div class="view-filter">
+        <h1>Guilherme Sanches Flôres Queiroz</h1>
+        <p>BSI - 018</p>
+      </div>
+    </div>
+
+    <div id="historia">
+      <div class="container">
+        <div class="titulo">
+          <h1>Um pouco sobre mim...</h1>
+        </div>
+
+        <div class="h-cards">
+          <div class="h-card">
+            <h2>Infância</h2>
+            <div class="h-card-content">
+              <div class="h-img">
+                <img src="styles/familia.jpeg" />
+              </div>
+              <div class="h-content">
+                <p>Eu adorava jogar jogos eletrônicos como a maioria das crianças, gastava horas em computadores e consoles mas não tinha um interesse por computação, aspirava ser veterinário, depois médico e por fim psicologia. Até o meu terceiro médio eu cogitava entre alguns cursos de biológicas</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-card">
+            <h2>Vestibular</h2>
+            <div class="h-card-content">
+              <div class="h-img">
+                <img src="styles/EM.jpeg" />
+              </div>
+              <div class="h-content">
+                <p>Durante os vestibulares no entanto comecei a gostar bastante de matemática, não sabia direito em qual curso aplicar, como eu queria virar hacker e manjar de computador e eu achava que engenharia era um curso bom, prestei pra Eng comp em São Paulo. Por sorte não passei nas primeiras chamadas da fuvest e pelo ENEM prestei em BCC no Rio Grande do Sul. Soube que tinha reescolha pela Fuvest e resolvi arriscar BSI em São Carlos</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-card">
+            <h2>Agora</h2>
+            <div class="h-card-content">
+              <div class="h-img">
+                <img src="styles/gratidao.jpeg" />
+              </div>
+              <div class="h-content">
+                <p>Agradeço todos os dias a Alan Turing por ter escolhido TI, cada nova tecnologia e projeto que desenvolvo me motiva a querer aprender mais, infelizmente não virei hacker mas aprendi várias coisas bacanas de computação. Agradeço também por não ter ido para Eng, ou BCC. Calc 1 foi meu limite, pegou?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mata-mosca">
+      <div class="container">
+        <h1>Como tudo começou...</h1>
+        <select class="menu-s" id="nivel" onchange="iniciarJogo()">
+          <option value="">-- Selecione o nível --</option>
+          <option value="normal">Normal</option>
+          <option value="dificil">Difícil</option>
+          <option value="deus">Deus</option>
+        </select>
+        <div class="jogo" onresize="ajustaTamanhoPalcoJogo()">
+          <div id="game-window">
+            <div class="painel">
+              <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png" />
+                <img id="v2" src="imagens/coracao_cheio.png" />
+                <img id="v3" src="imagens/coracao_cheio.png" />
+              </div>
+
+              <div class="cronometro">
+                Tempo restante: <span id="cronometro"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game-footer">
+          <p>Este foi o meu primeiro projeto web mais complexo, um joguinho simples para consolidar o módulo sobre DOM, a partir deste comecei a estudar cada vez mais web, desenvolvi alguns outros projetos pessoais, me aprofundei em javascript, conheci frameworks como angular e react, estágiei na área... E agora espero poder fazer parte desse time e desenvolver coisas cada vez mais legais</p>
+      </div>
+    </div>
+
+    <div id="encerramento">
+        <div class="container">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
