@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+body {
+  margin: 0; }
+  body a {
+    text-decoration: none; }
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 60px;
+  position: fixed;
+  background: #ffffff;
+  z-index: 5; }
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  width: 1024px;
+  height: 100%;
+  align-content: center;
+  align-items: center; }
+
+.logo {
+  width: 40%; }
+  .logo a {
+    color: #333333;
+    font-size: 1.9em; }
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%; }
+
+.navbar-menu, .contato {
+  display: flex; }
+
+.nav-item {
+  display: flex;
+  padding: 5px 16px;
+  font-size: 1.4em;
+  font-weight: 600;
+  background: #34be90;
+  text-decoration: none;
+  color: white;
+  border-radius: 5%;
+  margin: 0 0.2em; }
+  .nav-item:hover {
+    background: #95be34; }
+
+.capa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(voarvoar.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  .capa h1, .capa p {
+    color: #ffffff; }
+  .capa .view-filter {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4%;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333ab;
+    padding: 4px 8px; }
+    .capa .view-filter p {
+      margin-top: -0.3em;
+      font-size: 1.2em; }
+
+#historia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  align-items: center; }
+  #historia .titulo {
+    margin-bottom: 2em; }
+  #historia .container {
+    padding: 3% 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center; }
+  #historia .h-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+  #historia .h-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 400px;
+    height: 400px;
+    margin: 0 0.1em;
+    border-radius: 30px;
+    background: linear-gradient(70deg, #6a9620 20.98%, #93d721 87.21%); }
+  #historia .h-card-content {
+    position: relative; }
+  #historia .h-img {
+    width: 100%;
+    height: 400px;
+    background-size: cover; }
+    #historia .h-img img {
+      width: 100%;
+      height: 100%; }
+  #historia .h-content {
+    position: absolute;
+    bottom: 0%;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 100%;
+    background: linear-gradient(rgba(14, 78, 75, 0.6), rgba(27, 105, 101, 0.5)); }
+    #historia .h-content p {
+      padding: 0 0.3em; }
+
+#mata-mosca {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  align-items: center; }
+  #mata-mosca .jogo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em; }
+  #mata-mosca .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center; }
+    #mata-mosca .container h1 {
+      color: white; }
+  #mata-mosca #game-window {
+    display: flex;
+    width: 65vw;
+    height: 65vh;
+    background-image: url(../imagens/bg.jpg);
+    background-repeat: no-repeat;
+    position: relative; }
+  #mata-mosca .mosquito1 {
+    width: 50px;
+    height: 50px; }
+  #mata-mosca .mosquito2 {
+    width: 70px;
+    height: 70px; }
+  #mata-mosca .mosquito3 {
+    width: 90px;
+    height: 90px; }
+  #mata-mosca .ladoA {
+    transform: scaleX(1); }
+  #mata-mosca .ladoB {
+    transform: scaleX(-1); }
+  #mata-mosca .painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7; }
+  #mata-mosca .vidas {
+    float: left; }
+  #mata-mosca .cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold; }
+  #mata-mosca .game-footer {
+    display: flex;
+    width: 100%;
+    max-width: 1024px; }
+    #mata-mosca .game-footer p {
+      color: #333333;
+      font-size: 1.1em;
+      font-weight: 700;
+      font-family: 'Raleway', sans-serif; }
+      @media screen and (max-width: 800px) {
+        #mata-mosca .game-footer p {
+          padding: 0 1em; } }
+
+#encerramento {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  #encerramento .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    justify-content: center; }
+
+/*# sourceMappingURL=styles.css.map */

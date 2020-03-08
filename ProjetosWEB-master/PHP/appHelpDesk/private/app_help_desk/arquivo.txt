@@ -1,0 +1,6 @@
+﻿1#Computador#Hardware#liga e desliga
+4#Notebook#Impressora#não imprime
+1#Notebook#Software#Ta sem windows
+1#Notebook#Impressora#Não imprime
+1#Notebook#Hardware#Não carrega
+1#Notebook#Software#Não roda lolzinho
